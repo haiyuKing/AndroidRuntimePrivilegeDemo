@@ -13,4 +13,12 @@
         android:layout_height="wrap_content"
         android:text="手动获取权限"
         android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_opensetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开应用权限设置界面"
+        android:layout_below="@id/btn_getpermission"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>

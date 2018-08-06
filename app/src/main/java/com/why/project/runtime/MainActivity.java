@@ -25,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
 
 		MultPermission2();
 		clickPermission(findViewById(R.id.btn_getpermission));
+
+		findViewById(R.id.btn_opensetting).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//打开应用权限设置界面
+				PermissionSettingPage.start(MainActivity.this,false);
+			}
+		});
 	}
 
 	/**只有一个运行时权限申请的情况*/
